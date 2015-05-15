@@ -8,6 +8,8 @@ html {
 }
 
 a {
+  color: inherit;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -19,7 +21,11 @@ article {
   order: 1;
 }
 
-aside {
+article img {
+  width: 80%;
+}
+
+section aside {
   order: 1;
 }
 
@@ -41,16 +47,46 @@ main {
 
 header h1 {
   font-size: 3em;
-  padding: 1rem;
+}
+
+header h2 {
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 100%;
   margin: auto;
-  max-width: 900px;
+  max-width: 960px;
 }
 
 section {
   display: flex;
 }
+
+.copy {
+  text-align: left;
+}
+
+.instagram img {
+  width: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
