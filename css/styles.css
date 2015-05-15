@@ -75,6 +75,14 @@ section {
   display: flex;
 }
 
+section aside {
+  flex-grow: 1;
+}
+
+section article {
+  flex-grow: 3;
+}
+
 .copy {
   text-align: left;
 }
@@ -105,13 +113,17 @@ section {
   margin-bottom: 1rem;
 }
 
+.skate {
+  margin: 1rem;
+}
+
 @media (min-width: 480px) {
   header img {
     margin-left: 2%;
   }
 
   section aside {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
