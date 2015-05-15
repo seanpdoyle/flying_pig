@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+article {
+  order: 1;
+}
+
+aside {
+  order: 1;
+}
+
+body {
+  color: white;
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  background-image: url("../img/background.jpg");
+}
+
+header {
+  display: flex;
+}
+
+header,
+main {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  padding: 1rem;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  margin: auto;
+  max-width: 900px;
+}
+
+section {
+  display: flex;
+}
