@@ -42,6 +42,10 @@ h6 {
   padding: 0;
 }
 
+hr {
+  color: var(--color--red--faded);
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -73,14 +77,52 @@ img {
   margin: 1rem;
 }
 
+.address {
+  --address-margin: 0.25rem;
+}
+
+.address p {
+  margin-bottom: var(--address-margin);
+  margin-top: 0;
+}
+
+.address p:last-of-type {
+  margin-bottom: 0;
+}
+
+.button {
+  --button--padding: 1rem;
+
+  background-color: var(--color--red);
+  border: solid 1px var(--color--red--faded);
+  border-radius: 1rem;
+  color: white;
+  display: block;
+  padding: var(--button--padding);
+}
+
+.button:focus,
+.button:hover {
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.button:focus {
+  outline: var(--color--blue) solid 2px;
+  outline-radius: 1rem;
+}
+
 .contact-information li:last-of-type {
   margin-bottom: 0;
 }
 
 .content-section {
+  --content-section--padding: 1rem;
+
   margin-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: var(--content-section--padding);
+  padding-right: var(--content-section--padding);
 }
 
 .content-section--centered {
@@ -139,11 +181,26 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  :root {
+    --font-size: 100%;
+    --font-size--body: 1.2rem;
+    --font-size--heading: 1.4rem;
+    --font-size--hero: 2.4rem;
+  }
+
+  .address {
+    --address-margin: 0.5rem;
+  }
+
   .brand-footer {
     border-top: none;
     border-right-color: var(--color--gray);
     border-right-width: 2px;
     border-right-style: solid;
+  }
+
+  .content-section {
+    --content-section--padding: 2rem;
   }
 
   .desktop--hidden {
