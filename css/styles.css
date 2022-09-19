@@ -9,7 +9,7 @@
   --font-size: 100%;
   --font-size--body: 1.1rem;
   --font-size--heading: 1.2rem;
-  --font-size--hero: 1.6rem;
+  --font-size--hero: 1.4rem;
 }
 
 a {
@@ -25,6 +25,10 @@ body {
   margin: 0;
   font-size: var(--font-size);
   font-family: var(--font-family);
+}
+
+dd {
+  margin: 0;
 }
 
 ul {
@@ -185,6 +189,10 @@ img {
   margin-right: var(--content-section--padding);
 }
 
+.u-display--block {
+  display: block;
+}
+
 .u-display--inline {
   display: inline;
 }
@@ -198,6 +206,16 @@ img {
 }
 .u-margin-top--none {
   margin-top: 0;
+}
+
+.u-text-transform--uppercase {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 640px) {
+  :root {
+    --font-size--hero: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
